@@ -1,0 +1,36 @@
+.clients-list {
+  display: flex;
+  margin: -15px;
+}
+.clients-item {
+  margin: 15px;
+}
+
+.clients-item-link {
+  @extend %align-list;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--main-bcg-color);
+  border: 1px solid var(--links-color);
+  border-radius: 4px;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--links-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+
+  .clients-item-link:hover &,
+  .clients-item-link:focus & {
+    fill: var(--accent-color);
+  }
+}

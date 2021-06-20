@@ -1,0 +1,38 @@
+.team {
+  background-color: var(--bcg-grey-color);
+}
+
+.team-member {
+  padding: 30px 32px 30px 32px;
+}
+.team__list {
+  display: flex;
+  margin: -15px;
+}
+.team__item {
+  width: calc((100% - 90px) / 4);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--main-bcg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 15px;
+}
+
+.team-member__name {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.team-member__profession {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/*  Social-icon --component */

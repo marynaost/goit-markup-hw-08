@@ -1,0 +1,107 @@
+.filtres-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filtres-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filtres-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--bcg-grey-color);
+  color: var(--secondary-color);
+  border: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-footer-text-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.cards-item {
+  width: calc((100% - 90px) / 3);
+  /* width: 370px; */
+  margin: 15px;
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--main-footer-text-color);
+  background: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+  .cards-item-link:hover &,
+  .cards-item-link:focus & {
+    transform: translateY(0%);
+  }
+}
+
+.cards-title-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  margin: 0 0 4px 0;
+}
+
+.cards-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.card-list-text {
+  /* height: 110px; */
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}

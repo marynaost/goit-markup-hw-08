@@ -1,0 +1,117 @@
+.footer {
+  background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-left-side {
+  margin-right: 70px;
+}
+
+.address-list .maps {
+  color: var(--main-footer-text-color);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-footer-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social__list {
+  display: flex;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social__link {
+  @extend %align-list;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social__icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-footer-text-color);
+}
+
+/* FOOTER RIGHT SIDE */
+
+.footer-right-side {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-email {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: var(--main-footer-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.btn-subscription {
+  @extend %align-list;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px 10px 29px;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  fill: currentColor;
+  margin-left: 10px;
+}
