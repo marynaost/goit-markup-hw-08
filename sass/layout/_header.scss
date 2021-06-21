@@ -37,7 +37,14 @@
 .header__mobile-menu-icon {
   width: 40px;
   height: 40px;
-  fill: var(--secondary-color);
+  // fill: var(--secondary-color);
+}
+
+.header__mobile-menu-btn:hover,
+.header__mobile-menu-btn:focus,
+.header__mobile-menu-btn:active {
+  fill: #2196f3;
+  cursor: pointer;
 }
 // .header {
 //   padding-top: 24px;
