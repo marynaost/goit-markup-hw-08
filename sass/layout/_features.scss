@@ -1,42 +1,80 @@
-.features__list {
-  display: flex;
-}
+.features {
+  &__img {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bcg-grey-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 
-.features__item {
-  width: calc((100% - 90px) / 4);
-  /* width: 270px; */
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__icons {
+    width: 70px;
+    height: 70px;
+    fill: var(--secondary-color);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
   }
 }
 
-.features__img {
-  height: 120px;
-  @extend %align-list;
-  justify-content: center;
-  background: var(--bcg-grey-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.features__icons {
-  width: 70px;
-  height: 70px;
-  fill: var(--secondary-color);
+@media screen and (max-width: 767px) {
+  .features {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 
-.features__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__title {
+    text-align: left;
+  }
 }
 
-.features__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    margin: -15px;
+  }
+
+  .features__item {
+    width: calc((100% - 90px) / 4);
+    margin: 15px;
+  }
 }
