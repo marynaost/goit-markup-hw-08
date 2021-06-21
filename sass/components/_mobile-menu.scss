@@ -99,4 +99,10 @@
   padding: 0;
   border: none;
   background-color: #fff;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
 }
