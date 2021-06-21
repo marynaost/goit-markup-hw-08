@@ -199,6 +199,11 @@ body {
   background-color: #fff;
 }
 
+.mobile-menu-btn__close:hover, .mobile-menu-btn__close:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
 .btn {
   font-family: inherit;
   font-weight: 700;
@@ -508,7 +513,13 @@ body {
 .header__mobile-menu-icon {
   width: 40px;
   height: 40px;
-  fill: var(--secondary-color);
+}
+
+.header__mobile-menu-btn:hover,
+.header__mobile-menu-btn:focus,
+.header__mobile-menu-btn:active {
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 .hero {
