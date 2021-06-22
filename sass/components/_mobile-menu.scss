@@ -97,6 +97,8 @@
   align-items: center;
 
   &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
     margin-right: 10px;
   }
 
@@ -106,12 +108,6 @@
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-
-    span {
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      margin-left: 10px;
-      color: var(--secondary-color);
-    }
   }
 }
 
