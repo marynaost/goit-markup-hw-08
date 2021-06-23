@@ -5,7 +5,11 @@
 }
 
 .footer-left-side {
-  margin-right: 70px;
+  text-align: center;
+}
+
+.address-list {
+  margin-bottom: 60px;
 }
 
 .address-list .maps {
@@ -13,7 +17,7 @@
 }
 
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-footer-link {
@@ -30,17 +34,15 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-footer-text-color);
   margin-bottom: 20px;
 }
 
-.footer-content {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-social__list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-social__item:not(:last-child) {
@@ -72,18 +74,18 @@
 /* FOOTER RIGHT SIDE */
 
 .footer-right-side {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .footer-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 
 .input-email {
-  display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   font-weight: 400;
@@ -91,7 +93,6 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   padding: 15px 16px;
-  margin-right: 12px;
   color: var(--main-footer-text-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -105,6 +106,7 @@
 
   width: 200px;
   height: 50px;
+  margin-top: 20px;
   padding: 10px 28px 10px 29px;
 }
 
@@ -114,4 +116,68 @@
   background-size: contain;
   fill: currentColor;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  .footer-left-side {
+    margin-right: 165px;
+  }
+
+  .address-list {
+    margin-bottom: 0;
+  }
+
+  .input-email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer__wrapper {
+    margin-bottom: 0;
+  }
+
+  .footer-left-side {
+    text-align: left;
+    margin-right: 70px;
+  }
+
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .footer-social__list {
+    margin-bottom: 0;
+  }
+
+  .footer-right-side {
+    text-align: left;
+    margin-left: 93px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .input-email {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .btn-subscription {
+    margin-top: 0;
+  }
 }
