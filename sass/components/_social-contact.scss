@@ -1,6 +1,12 @@
 .social-contact {
-  @extend %align-list;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.social-contact__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-contact__link {
