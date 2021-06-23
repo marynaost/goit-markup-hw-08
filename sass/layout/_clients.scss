@@ -1,15 +1,17 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   margin: -15px;
 }
+
 .clients-item {
   margin: 15px;
 }
 
 .clients-item-link {
-  @extend %align-list;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   background-color: var(--main-bcg-color);
   border: 1px solid var(--links-color);
@@ -32,5 +34,38 @@
   .clients-item-link:hover &,
   .clients-item-link:focus & {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-item {
+    width: calc((100% - 60px) / 2);
+  }
+
+  .clients-item-link {
+    max-width: 210px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .clients-item {
+    width: calc((100% - 90px) / 3);
+  }
+  .clients-item-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+
+  .clients-item {
+    width: calc((100% - 120px) / 4);
+  }
+
+  .clients-item-link {
+    width: 170px;
   }
 }
