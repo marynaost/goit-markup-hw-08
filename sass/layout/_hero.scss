@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../img/bgimage-mob.jpg);
+    url(../img/bgimage-mob.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,17 +45,18 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/bgimage-mob@2x.jpg);
+      url(../img/bgimage-mob@2x.jpg);
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../img/bgimage-tablet.jpg);
+
     max-width: 768px;
   }
 }
