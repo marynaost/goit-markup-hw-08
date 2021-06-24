@@ -19,6 +19,7 @@ ol {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .list {
@@ -32,4 +33,8 @@ img {
 body {
   font-family: var(--primary-font-family);
   color: var(--main-color);
+}
+
+body.modal-open {
+  overflow: hidden;
 }
