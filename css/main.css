@@ -1231,6 +1231,9 @@ body.modal-open {
 }
 
 .cards-item {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -1284,8 +1287,6 @@ body.modal-open {
 
 .card-list-text {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -1309,16 +1310,8 @@ body.modal-open {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
-  .cards-item-link {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
   .overlay {
     padding: 49px 24px;
-  }
-  .card-list-text {
-    flex-grow: 1;
   }
 }
 
