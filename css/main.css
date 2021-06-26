@@ -154,13 +154,14 @@ body.modal-open {
 
 .mobile-menu__container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
-}
-
-.mobile-menu-nav {
-  margin-bottom: 302px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu-nav__link {
@@ -853,6 +854,9 @@ body.modal-open {
   .features__item {
     width: calc((100% - 90px) / 4);
     margin: 15px;
+  }
+  .features__title {
+    text-align: left;
   }
 }
 
